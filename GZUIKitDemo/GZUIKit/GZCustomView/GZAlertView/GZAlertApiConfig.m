@@ -6,6 +6,7 @@
 //
 
 #import "GZAlertApiConfig.h"
+#import "GZDefine.h"
 
 @interface GZAlertApiConfig ()
 
