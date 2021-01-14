@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "GZUIKit"
-  spec.version      = "1.1.8"
+  spec.version      = "1.1.9"
   spec.summary      = "this is a practice project of pod,personal pod!"
   
   spec.description  = "42181327@qq.com,this is a practice project of pod,personal pod!"
@@ -41,6 +41,10 @@ Pod::Spec.new do |spec|
   
   spec.subspec 'GZHeader' do |ss|
     ss.source_files = 'GZUIKitDemo/GZUIKit/GZHeader/*.{h,m}'
+  end
+  
+  spec.subspec 'GZAlertView' do |ss|
+    ss.source_files = 'GZUIKitDemo/GZUIKit/GZAlertView/*.{h,m}'
   end
   
   spec.requires_arc = true
