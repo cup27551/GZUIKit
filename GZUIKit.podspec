@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "GZUIKit"
-  spec.version      = "1.0.1"
+  spec.version      = "1.0.3"
   spec.summary      = "this is a practice project of pod,personal pod!"
   
   spec.description  = "42181327@qq.com,this is a practice project of pod,personal pod!"
@@ -26,6 +26,26 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/cup27551/GZUIKit.git", :tag => spec.version }
   
   spec.source_files  = "GZUIKitDemo/GZUIKit/**/*.{h,m}"
+  
+  spec.subspec 'GZCategory' do |ss|
+    spec.source_files = 'GZUIKitDemo/GZUIKit/GZCategory/*.{h,m}'
+  end
+  
+  spec.subspec 'GZCustomView' do |ss|
+    spec.source_files = 'GZUIKitDemo/GZUIKit/GZCustomView/*.{h,m}'
+  end
+  
+  spec.subspec 'GZFunction' do |ss|
+    spec.source_files = 'GZUIKitDemo/GZUIKit/GZFunction/*.{h,m}'
+  end
+  
+  spec.subspec 'GZHeader' do |ss|
+    spec.source_files = 'GZUIKitDemo/GZUIKit/GZHeader/*.{h,m}'
+  end
+  
+  spec.GZLayoutManager 'GZHeader' do |ss|
+    spec.source_files = 'GZUIKitDemo/GZUIKit/GZLayoutManager/*.{h,m}'
+  end
   
   spec.requires_arc = true
 

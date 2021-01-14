@@ -9,13 +9,13 @@
 #define GZUIKit_h
 
 #import "GZDefine.h"
-#improt "GZConfigUtils.h"
+#import "GZConfigUtils.h"
 
 //customView
-#improt "GZAlertView.h"
+#import "GZAlertView.h"
 
 //category
-#improt "UIView+GZ.h"
-#improt "UIView+GZFunction.h"
+#import "UIView+GZ.h"
+#import "UIView+GZFunction.h"
 
 #endif /* GZUIKit_h */
