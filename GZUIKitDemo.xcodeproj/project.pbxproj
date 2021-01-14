@@ -70,7 +70,6 @@
 			isa = PBXGroup;
 			children = (
 				BA6025DA25A46ADA00F2A254 /* GZDefine.h */,
-				BA03AC7925B029AD00EDF1DF /* GZUIKit.h */,
 			);
 			path = GZHeader;
 			sourceTree = "<group>";
@@ -139,6 +138,7 @@
 		BA6025D525A46ADA00F2A254 /* GZUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				BA03AC7925B029AD00EDF1DF /* GZUIKit.h */,
 				BA03AC7825B0299500EDF1DF /* GZHeader */,
 				BA03AC7725B0298900EDF1DF /* GZFunction */,
 				BA47070C25AC37890025FE88 /* GZCategory */,
@@ -384,7 +384,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = BZDGuanZi.GZUIKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -403,7 +403,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = BZDGuanZi.GZUIKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
