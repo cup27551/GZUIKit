@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "GZUIKit"
-  spec.version      = "1.1.0"
+  spec.version      = "1.1.1"
   spec.summary      = "this is a practice project of pod,personal pod!"
   
   spec.description  = "42181327@qq.com,this is a practice project of pod,personal pod!"
@@ -25,14 +25,16 @@ Pod::Spec.new do |spec|
   
   spec.source       = { :git => "https://github.com/cup27551/GZUIKit.git", :tag => spec.version }
   
-  spec.source_files  = "GZUIKitDemo/GZUIKit/GZUIKit.h"
+  spec.source_files  = 'GZUIKitDemo/GZUIKit/GZUIKit.h'
   
   spec.subspec 'GZCategory' do |ss|
     ss.source_files = 'GZUIKitDemo/GZUIKit/GZCategory/*.{h,m}'
   end
   
   spec.subspec 'GZCustomView' do |ss|
-    ss.source_files = 'GZUIKitDemo/GZUIKit/GZCustomView/*.{h,m}'
+    ss.subspec 'GZAlertView' do |sss|
+        sss.source_files = 'GZUIKitDemo/GZUIKit/GZCustomView/GZAlertView/*.{h,m}'
+    end
   end
   
   spec.subspec 'GZFunction' do |ss|
