@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA03AC7525B0244900EDF1DF /* GZAlertApiConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = BA03AC7425B0244900EDF1DF /* GZAlertApiConfig.m */; };
+		BA47070625AC25900025FE88 /* GZAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA47070525AC258F0025FE88 /* GZAlertView.m */; };
+		BA47070A25AC2DAE0025FE88 /* GZConfigUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BA47070925AC2DAE0025FE88 /* GZConfigUtils.m */; };
+		BA47070F25AC37A30025FE88 /* UIView+GZFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = BA47070E25AC37A30025FE88 /* UIView+GZFunction.m */; };
 		BA6025BC25A46AAB00F2A254 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6025BB25A46AAB00F2A254 /* AppDelegate.m */; };
 		BA6025C225A46AAB00F2A254 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6025C125A46AAB00F2A254 /* ViewController.m */; };
 		BA6025C525A46AAB00F2A254 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA6025C325A46AAB00F2A254 /* Main.storyboard */; };
@@ -17,6 +21,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA03AC7325B0244900EDF1DF /* GZAlertApiConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GZAlertApiConfig.h; sourceTree = "<group>"; };
+		BA03AC7425B0244900EDF1DF /* GZAlertApiConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GZAlertApiConfig.m; sourceTree = "<group>"; };
+		BA03AC7925B029AD00EDF1DF /* GZUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GZUIKit.h; sourceTree = "<group>"; };
+		BA47070425AC258F0025FE88 /* GZAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GZAlertView.h; sourceTree = "<group>"; };
+		BA47070525AC258F0025FE88 /* GZAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GZAlertView.m; sourceTree = "<group>"; };
+		BA47070825AC2DAE0025FE88 /* GZConfigUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GZConfigUtils.h; sourceTree = "<group>"; };
+		BA47070925AC2DAE0025FE88 /* GZConfigUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GZConfigUtils.m; sourceTree = "<group>"; };
+		BA47070D25AC37A30025FE88 /* UIView+GZFunction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+GZFunction.h"; sourceTree = "<group>"; };
+		BA47070E25AC37A30025FE88 /* UIView+GZFunction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+GZFunction.m"; sourceTree = "<group>"; };
 		BA6025B725A46AAB00F2A254 /* GZUIKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GZUIKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6025BA25A46AAB00F2A254 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BA6025BB25A46AAB00F2A254 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -44,6 +57,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA03AC7725B0298900EDF1DF /* GZFunction */ = {
+			isa = PBXGroup;
+			children = (
+				BA47070825AC2DAE0025FE88 /* GZConfigUtils.h */,
+				BA47070925AC2DAE0025FE88 /* GZConfigUtils.m */,
+			);
+			path = GZFunction;
+			sourceTree = "<group>";
+		};
+		BA03AC7825B0299500EDF1DF /* GZHeader */ = {
+			isa = PBXGroup;
+			children = (
+				BA6025DA25A46ADA00F2A254 /* GZDefine.h */,
+				BA03AC7925B029AD00EDF1DF /* GZUIKit.h */,
+			);
+			path = GZHeader;
+			sourceTree = "<group>";
+		};
+		BA47070225AC24D80025FE88 /* GZCustomView */ = {
+			isa = PBXGroup;
+			children = (
+				BA47070325AC24E20025FE88 /* GZAlertView */,
+			);
+			path = GZCustomView;
+			sourceTree = "<group>";
+		};
+		BA47070325AC24E20025FE88 /* GZAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				BA47070425AC258F0025FE88 /* GZAlertView.h */,
+				BA47070525AC258F0025FE88 /* GZAlertView.m */,
+				BA03AC7325B0244900EDF1DF /* GZAlertApiConfig.h */,
+				BA03AC7425B0244900EDF1DF /* GZAlertApiConfig.m */,
+			);
+			path = GZAlertView;
+			sourceTree = "<group>";
+		};
+		BA47070C25AC37890025FE88 /* GZCategory */ = {
+			isa = PBXGroup;
+			children = (
+				BA47070D25AC37A30025FE88 /* UIView+GZFunction.h */,
+				BA47070E25AC37A30025FE88 /* UIView+GZFunction.m */,
+			);
+			path = GZCategory;
+			sourceTree = "<group>";
+		};
 		BA6025AE25A46AAB00F2A254 = {
 			isa = PBXGroup;
 			children = (
@@ -80,8 +139,11 @@
 		BA6025D525A46ADA00F2A254 /* GZUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				BA03AC7825B0299500EDF1DF /* GZHeader */,
+				BA03AC7725B0298900EDF1DF /* GZFunction */,
+				BA47070C25AC37890025FE88 /* GZCategory */,
+				BA47070225AC24D80025FE88 /* GZCustomView */,
 				BA6025D625A46ADA00F2A254 /* GZLayoutManager */,
-				BA6025DA25A46ADA00F2A254 /* GZDefine.h */,
 			);
 			path = GZUIKit;
 			sourceTree = "<group>";
@@ -90,8 +152,8 @@
 			isa = PBXGroup;
 			children = (
 				BA6025D725A46ADA00F2A254 /* GZLayoutManager.h */,
-				BA6025D825A46ADA00F2A254 /* UIView+GZ.m */,
 				BA6025D925A46ADA00F2A254 /* UIView+GZ.h */,
+				BA6025D825A46ADA00F2A254 /* UIView+GZ.m */,
 			);
 			path = GZLayoutManager;
 			sourceTree = "<group>";
@@ -165,9 +227,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA47070A25AC2DAE0025FE88 /* GZConfigUtils.m in Sources */,
+				BA47070F25AC37A30025FE88 /* UIView+GZFunction.m in Sources */,
 				BA6025C225A46AAB00F2A254 /* ViewController.m in Sources */,
 				BA6025BC25A46AAB00F2A254 /* AppDelegate.m in Sources */,
 				BA6025CD25A46AB000F2A254 /* main.m in Sources */,
+				BA47070625AC25900025FE88 /* GZAlertView.m in Sources */,
+				BA03AC7525B0244900EDF1DF /* GZAlertApiConfig.m in Sources */,
 				BA6025DB25A46ADA00F2A254 /* UIView+GZ.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,11 +378,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XK67NLSGSP;
 				INFOPLIST_FILE = GZUIKitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = BZDGuanZi.GZUIKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -329,11 +397,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XK67NLSGSP;
 				INFOPLIST_FILE = GZUIKitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = BZDGuanZi.GZUIKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

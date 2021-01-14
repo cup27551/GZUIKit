@@ -6,6 +6,8 @@
 //
 
 #import "ViewController.h"
+#import "GZAlertView.h"
+#import "GZAlertApiConfig.h"
 
 @interface ViewController ()
 
@@ -15,7 +17,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    self.view.backgroundColor = [UIColor darkGrayColor];
+    
+    
+    GZAlertApiConfig *config = [GZAlertApiConfig shardInstance];
+    config.isDarkStyle = YES;
+    config.isCenter = YES;
+    
+    [GZAlertView showNormalAlertView:@"sdfsdfsdfsdfsdfsfsdfsdfssdfsdfsdfsdfsdfsfsdfsdfssdfsdfsdfsdfsdfsfsdfsdfssdfsdfsdfsdfsdfsfsdfsdfssdfsdfsdfsdfsdfsfsdfsdfssdfsdfsdfsdfsdfsfsdfsdfssdfsdfsdfsdfsdfsfsdfsdfs" delay:5];
+    
+    
 }
 
 

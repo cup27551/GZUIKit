@@ -6,6 +6,9 @@
 //
 
 #import "AppDelegate.h"
+#import "GZAlertView.h"
+#import "GZLayoutManager.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -15,7 +18,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    UIWindow *windows = [[UIWindow alloc] initWithFrame:GZ_SCREEM_BOUNDS];
+    windows.backgroundColor = [UIColor whiteColor];
+    self.window = windows;
+
+    self.window.rootViewController = [[ViewController alloc] init];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

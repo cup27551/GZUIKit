@@ -10,7 +10,6 @@
 
 #import "GZLayoutManager.h"
 
-
 typedef void(^GZHandler)(void);
 typedef void(^GZNormalHandler)(id value);
 typedef void(^GZMoreValueHandler)(id value1,id value2);
@@ -54,6 +53,11 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
 #define GZ_TOP_HEIGHT               (IS_iPhoneX ? 44.f : 20.f)
 #define GZ_BOTTOM_HEIGHT            (IS_iPhoneX ? 34.f : 0.f)
 #define GZ_BOTTOM_DEFAULT_HEIGHT    (IS_iPhoneX ? 20.f : 0.f)
+
+//MARK: Fonts
+#define GZ_FONT_YAHEI(x)        [UIFont systemFontOfSize:x weight:UIFontWeightRegular]
+#define GZ_FONT_YAHEI_LIGHT(x)  [UIFont systemFontOfSize:x weight:UIFontWeightLight]
+#define GZ_FONT_YAHEI_BOLD(x)   [UIFont systemFontOfSize:x weight:UIFontWeightBold]
 
 //MARK: AlertMessg
 #define GZ_ERROR_ALAERT                @"❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌"

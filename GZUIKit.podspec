@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "GZUIKit"
-  spec.version      = "0.0.1"
+  spec.version      = "1.0.1"
   spec.summary      = "this is a practice project of pod,personal pod!"
   
   spec.description  = "42181327@qq.com,this is a practice project of pod,personal pod!"
@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
   
   spec.source       = { :git => "https://github.com/cup27551/GZUIKit.git", :tag => spec.version }
   
-  spec.source_files  = "GZUIKit/GZUIKit/**/*.{h,m}"
+  spec.source_files  = "GZUIKitDemo/GZUIKit/**/*.{h,m}"
   
   spec.requires_arc = true
 
