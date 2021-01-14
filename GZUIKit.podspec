@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "GZUIKit"
-  spec.version      = "1.0.3"
+  spec.version      = "1.0.4"
   spec.summary      = "this is a practice project of pod,personal pod!"
   
   spec.description  = "42181327@qq.com,this is a practice project of pod,personal pod!"
@@ -43,7 +43,7 @@ Pod::Spec.new do |spec|
     spec.source_files = 'GZUIKitDemo/GZUIKit/GZHeader/*.{h,m}'
   end
   
-  spec.GZLayoutManager 'GZHeader' do |ss|
+  spec.subspec 'GZLayoutManager' do |ss|
     spec.source_files = 'GZUIKitDemo/GZUIKit/GZLayoutManager/*.{h,m}'
   end
   
