@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "GZUIKit"
-  spec.version      = "1.1.5"
+  spec.version      = "1.1.6"
   spec.summary      = "this is a practice project of pod,personal pod!"
   
   spec.description  = "42181327@qq.com,this is a practice project of pod,personal pod!"
