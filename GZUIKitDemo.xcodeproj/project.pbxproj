@@ -18,6 +18,10 @@
 		BA6025CA25A46AB000F2A254 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA6025C825A46AB000F2A254 /* LaunchScreen.storyboard */; };
 		BA6025CD25A46AB000F2A254 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6025CC25A46AB000F2A254 /* main.m */; };
 		BA6025DB25A46ADA00F2A254 /* UIView+GZ.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6025D825A46ADA00F2A254 /* UIView+GZ.m */; };
+		BA85666225B13D7A00D719AE /* UIImage+GZ.m in Sources */ = {isa = PBXBuildFile; fileRef = BA85666125B13D7A00D719AE /* UIImage+GZ.m */; };
+		BA85666625B140FE00D719AE /* NSDate+GZ.m in Sources */ = {isa = PBXBuildFile; fileRef = BA85666525B140FE00D719AE /* NSDate+GZ.m */; };
+		BA85666A25B1435600D719AE /* UIColor+GZ.m in Sources */ = {isa = PBXBuildFile; fileRef = BA85666925B1435600D719AE /* UIColor+GZ.m */; };
+		BA85666E25B147DD00D719AE /* NSString+GZ.m in Sources */ = {isa = PBXBuildFile; fileRef = BA85666D25B147DD00D719AE /* NSString+GZ.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +48,14 @@
 		BA6025D825A46ADA00F2A254 /* UIView+GZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GZ.m"; sourceTree = "<group>"; };
 		BA6025D925A46ADA00F2A254 /* UIView+GZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GZ.h"; sourceTree = "<group>"; };
 		BA6025DA25A46ADA00F2A254 /* GZDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZDefine.h; sourceTree = "<group>"; };
+		BA85666025B13D7A00D719AE /* UIImage+GZ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+GZ.h"; sourceTree = "<group>"; };
+		BA85666125B13D7A00D719AE /* UIImage+GZ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GZ.m"; sourceTree = "<group>"; };
+		BA85666425B140FE00D719AE /* NSDate+GZ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+GZ.h"; sourceTree = "<group>"; };
+		BA85666525B140FE00D719AE /* NSDate+GZ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+GZ.m"; sourceTree = "<group>"; };
+		BA85666825B1435600D719AE /* UIColor+GZ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+GZ.h"; sourceTree = "<group>"; };
+		BA85666925B1435600D719AE /* UIColor+GZ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+GZ.m"; sourceTree = "<group>"; };
+		BA85666C25B147DD00D719AE /* NSString+GZ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+GZ.h"; sourceTree = "<group>"; };
+		BA85666D25B147DD00D719AE /* NSString+GZ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+GZ.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +110,14 @@
 			children = (
 				BA47070D25AC37A30025FE88 /* UIView+GZFunction.h */,
 				BA47070E25AC37A30025FE88 /* UIView+GZFunction.m */,
+				BA85666025B13D7A00D719AE /* UIImage+GZ.h */,
+				BA85666125B13D7A00D719AE /* UIImage+GZ.m */,
+				BA85666425B140FE00D719AE /* NSDate+GZ.h */,
+				BA85666525B140FE00D719AE /* NSDate+GZ.m */,
+				BA85666825B1435600D719AE /* UIColor+GZ.h */,
+				BA85666925B1435600D719AE /* UIColor+GZ.m */,
+				BA85666C25B147DD00D719AE /* NSString+GZ.h */,
+				BA85666D25B147DD00D719AE /* NSString+GZ.m */,
 			);
 			path = GZCategory;
 			sourceTree = "<group>";
@@ -230,9 +250,13 @@
 				BA47070A25AC2DAE0025FE88 /* GZConfigUtils.m in Sources */,
 				BA47070F25AC37A30025FE88 /* UIView+GZFunction.m in Sources */,
 				BA6025C225A46AAB00F2A254 /* ViewController.m in Sources */,
+				BA85666A25B1435600D719AE /* UIColor+GZ.m in Sources */,
+				BA85666E25B147DD00D719AE /* NSString+GZ.m in Sources */,
+				BA85666625B140FE00D719AE /* NSDate+GZ.m in Sources */,
 				BA6025BC25A46AAB00F2A254 /* AppDelegate.m in Sources */,
 				BA6025CD25A46AB000F2A254 /* main.m in Sources */,
 				BA47070625AC25900025FE88 /* GZAlertView.m in Sources */,
+				BA85666225B13D7A00D719AE /* UIImage+GZ.m in Sources */,
 				BA03AC7525B0244900EDF1DF /* GZAlertApiConfig.m in Sources */,
 				BA6025DB25A46ADA00F2A254 /* UIView+GZ.m in Sources */,
 			);
@@ -378,13 +402,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = XK67NLSGSP;
 				INFOPLIST_FILE = GZUIKitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.6;
+				MARKETING_VERSION = 1.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = BZDGuanZi.GZUIKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -397,13 +422,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = XK67NLSGSP;
 				INFOPLIST_FILE = GZUIKitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.6;
+				MARKETING_VERSION = 1.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = BZDGuanZi.GZUIKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

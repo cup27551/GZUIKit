@@ -17,5 +17,8 @@
 //category
 #import "UIView+GZ.h"
 #import "UIView+GZFunction.h"
+#import "NSString+GZ.h"
+#import "UIColor+GZ.h"
+
 
 #endif /* GZUIKit_h */
