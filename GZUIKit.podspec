@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "GZUIKit"
-  spec.version      = "1.2.3.2"
+  spec.version      = "1.2.3.3"
   spec.summary      = "this is a practice project of pod,personal pod!"
   
   spec.description  = "42181327@qq.com,this is a practice project of pod,personal pod!"
@@ -48,6 +48,7 @@ Pod::Spec.new do |spec|
         sss.source_files = 'GZUIKitDemo/GZUIKit/GZCustomView/GZAlertView/*.{h,m}'
         sss.dependency 'GZUIKit/GZHeader'
         sss.dependency 'GZUIKit/GZLayoutManager'
+        sss.dependency 'GZUIKit/GZFunction'
     end
   end
   
