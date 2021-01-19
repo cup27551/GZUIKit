@@ -7,6 +7,7 @@
 
 #import <UIKit/UIKit.h>
 #import "GZAlertApiConfig.h"
+#import "GZDefine.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -16,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)showNormalAlertView:(NSString *)text delay:(NSTimeInterval)delay;
 + (void)showNormalAlertView:(NSString *)text handler:(void (^__strong)(void))handler;
 + (void)showNormalAlertView:(NSString *)text delay:(NSTimeInterval)delay handler:(void (^__strong)(void))handler;
+
++ (void)sheetAlertViewWithTitles:(NSArray *)titles cancelTitle:(NSString *)cancelTitle fromView:(UIView *)fromView  action:(GZIndexHandler)action;
 
 @end
 

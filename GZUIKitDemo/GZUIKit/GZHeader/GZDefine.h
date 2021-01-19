@@ -14,6 +14,7 @@ typedef void(^GZHandler)(void);
 typedef void(^GZNormalHandler)(id value);
 typedef void(^GZMoreValueHandler)(id value1,id value2);
 typedef void(^GZBoolValueHandler)(BOOL success,id value);
+typedef void(^GZIndexHandler)(NSInteger index);
 
 //MARK: Common
 #define APP_Name                    [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"]

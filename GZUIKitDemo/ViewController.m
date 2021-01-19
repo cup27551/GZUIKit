@@ -16,16 +16,11 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-
-    self.view.backgroundColor = [UIColor darkGrayColor];
+    [super viewDidLoad];    
     
-    
-    GZAlertApiConfig *config = [GZAlertApiConfig shardInstance];
-    config.isDarkStyle = YES;
-    config.isCenter = YES;
-    
-    [GZAlertView showNormalAlertView:@"sdfsdfsdfsdfsdfsfsdfsdfssdfsdfsdfsdfsdfsfsdfsdfssdfsdfsdfsdfsdfsfsdfsdfssdfsdfsdfsdfsdfsfsdfsdfssdfsdfsdfsdfsdfsfsdfsdfssdfsdfsdfsdfsdfsfsdfsdfssdfsdfsdfsdfsdfsfsdfsdfs" delay:5];
+    [GZAlertView sheetAlertViewWithTitles:@[@"233",@"23123"] cancelTitle:@"sss" fromView:self.view action:^(NSInteger index) {
+        NSLog(@"%ld",index);
+    }];
     
     
 }
