@@ -9,6 +9,7 @@
 #import "GZLayoutManager.h"
 #import "GZConfigUtils.h"
 #import "UIView+GZFunction.h"
+#import "GZDefine.h"
 
 @interface GZAlertView ()
 

@@ -7,9 +7,11 @@
 
 #import <UIKit/UIKit.h>
 #import "GZAlertApiConfig.h"
-#import "GZDefine.h"
 
 NS_ASSUME_NONNULL_BEGIN
+
+typedef void(^GZIndexHandler)(NSInteger index);
+
 
 @interface GZAlertView : UIView
 
